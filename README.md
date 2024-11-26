@@ -1,59 +1,72 @@
 # [6-TAREA-1INT46-PUCP](https://luccemhu.github.io/6-TAREA-1INT46-PUCP/)
 
-# **Rock, Paper, Scissors Simulation with OOP**
+# **Rock, Paper, Scissors Simulation**
 
-Repositorio: https://github.com/luccemhu/6-TAREA-1INT46-PUCP
+#### **Repositorio**
+https://github.com/luccemhu/6-TAREA-1INT46-PUCP
 
-Github Pages: https://luccemhu.github.io/6-TAREA-1INT46-PUCP/
+#### **Github Pages**
+https://luccemhu.github.io/6-TAREA-1INT46-PUCP/
 
-## **Descripción General**
-Este repositorio implementa un simulador del clásico juego "Piedra, Papel o Tijera" utilizando conceptos de **Programación Orientada a Objetos (OOP)**. Los jugadores compiten en varias rondas, y el programa declara al ganador basado en el puntaje acumulado.
+Este repositorio contiene tres ejercicios relacionados con la simulación del juego clásico "Piedra, Papel o Tijera". Cada ejercicio aborda un problema específico y muestra diferentes niveles de abstracción y complejidad en la solución.
+
+---
+
+## **Ejercicios**
+
+---
+
+### **[1. Live Results of the Tournament](https://luccemhu.github.io/6-TAREA-1INT46-PUCP/)**
+#### **Descripción General**
+Se implementa un seguimiento en tiempo real de los resultados del torneo "Piedra, Papel o Tijera". Se muestran los puntajes acumulados de cada jugador al final de cada ronda, ordenados dinámicamente para simular una visualización en vivo.
+
 
 ---
 
 ## **Estructura del Proyecto**
-
-### **1. Clases**
-#### **`Player`**
-- Representa un jugador básico.
-- **Atributos**:
-  - `name`: Nombre del jugador.
-  - `score`: Puntaje acumulado.
-- **Métodos**:
-  - `increase_score(value)`: Incrementa el puntaje del jugador.
-
-#### **`PlayerBetter`**
-- Hereda de `Player`.
-- **Atributos adicionales**:
-  - `strategy`: Última estrategia elegida.
-- **Métodos adicionales**:
-  - `get_strategy()`: Elige una estrategia aleatoria.
-
-#### **`Game`**
-- Maneja el flujo del juego.
-- **Atributos**:
-  - `players`: Lista de jugadores.
-- **Métodos**:
-  - `play_round()`: Enfrenta a todos los pares de jugadores en una ronda.
-  - `play_game(rounds)`: Ejecuta múltiples rondas.
-  - `declare_winner()`: Determina el ganador basado en el puntaje.
-  - `show_results()`: Muestra los puntajes finales.
+- **Objetivo**: Mostrar resultados en vivo después de cada ronda.
+- **Características**:
+  - Resultados en tiempo real durante las rondas.
+  - Ordenamiento dinámico de los puntajes.
+- **Resultados Esperados**: Una tabla que muestra el puntaje acumulado de los jugadores al final de cada ronda.
 
 ---
 
-### **2. Configuración**
-- **Jugadores**: Incluye nombres como `'Gian'`, `'Lucho'`, `'Joel'`, `'Chavi'` y reconocidos politólogos latinoamericanos.
-- **Estrategias**: `'Rock'`, `'Paper'`, `'Scissors'`.
-- **Reglas del Juego**:
-```python
-payoff = {
-    ('Rock', 'Paper'): (0, 1),
-    ('Paper', 'Rock'): (1, 0),
-    ('Rock', 'Scissors'): (1, 0),
-    ('Scissors', 'Rock'): (0, 1),
-    ('Paper', 'Scissors'): (0, 1),
-    ('Scissors', 'Paper'): (1, 0),
-    ('Rock', 'Rock'): (0, 0),
-    ('Paper', 'Paper'): (0, 0),
-    ('Scissors', 'Scissors'): (0, 0)
-}
+### **[2. Implement the Game for 10 Players](https://luccemhu.github.io/6-TAREA-1INT46-PUCP/)**
+#### **Descripción General**
+Este ejercicio implementa el juego para 10 jugadores, quienes compiten entre sí en 100 rondas. Los resultados finales se muestran en una tabla que resume los puntajes acumulados de todos los participantes.
+
+---
+
+## **Estructura del Proyecto**
+- **Objetivo**: Adaptar el juego para múltiples jugadores.
+- **Características**:
+  - 10 jugadores con nombres personalizados.
+  - 100 rondas en las que todos los jugadores compiten entre sí.
+  - Los resultados se presentan al final en un formato tabular.
+- **Resultados Esperados**: Una tabla con los puntajes acumulados de cada jugador, ordenada de mayor a menor.
+
+---
+
+### **[3. Challenge - Classes for Players and Game](https://luccemhu.github.io/6-TAREA-1INT46-PUCP/)**
+#### **Descripción General**
+Este ejercicio utiliza clases para abstraer jugadores y el flujo del juego, permitiendo simular 100 rondas entre varios jugadores, guardar los puntajes y declarar a los ganadores.
+
+---
+
+## **Estructura del Proyecto**
+- **Objetivo**: Usar programación orientada a objetos para estructurar el juego.
+- **Características**:
+  - Clase `Player` para gestionar atributos y métodos básicos.
+  - Clase `Game` para manejar el flujo de rondas y resultados.
+  - Declaración de ganadores con puntajes más altos.
+- **Resultados Esperados**:
+  - Una tabla con los puntajes finales de todos los jugadores.
+  - Un mensaje que declara al ganador o ganadores.
+
+---
+
+## **Instalación**
+1. Clona el repositorio del ejercicio correspondiente:
+   ```bash
+   git clone https://github.com/luccemhu/6-TAREA-1INT46-PUCP.git
